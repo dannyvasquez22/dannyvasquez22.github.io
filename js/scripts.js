@@ -30,13 +30,11 @@ let objeto = document.getElementsByClassName('item');
 
 function contruyeElementos(data){
     eleUl = document.createElement('ul');
-    // let firstBox = document.getElementById('r_uno');
     for(const cont of data[0].interesesPersonales){
         const eleLi = document.createElement('li');
         eleText = document.createTextNode(cont);
         eleLi.appendChild(eleText);
         eleUl.appendChild(eleLi);
-        // firstBox.appendChild(eleUl);
         eleUl.appendAfter(document.getElementById('intereses_personales'));
     }
 
@@ -47,6 +45,51 @@ function contruyeElementos(data){
         eleLi.appendChild(eleLang);
         elementUlLanguage.appendChild(eleLi);
         elementUlLanguage.appendAfter(document.getElementById('languages'));
+    }
+
+    for (const lang of data[0].aboutMe) {
+        const elementPAbout = document.createElement('p');
+        elementPAbout.appendChild(document.createTextNode(lang));
+        elementPAbout.appendAfter(document.getElementById('about_me'));
+    }
+
+    for (const edu of data[0].Educacion) {
+        const divi = document.createElement('div');
+        divi.classList.add('line');
+        
+        const divi_child = document.createElement('div');
+        divi_child.classList.add('item');
+        
+        const eleH2 = document.createElement('h2');
+        eleH2.appendChild(document.createTextNode(edu.Tema));
+
+        const eleH5 = document.createElement('h5');
+        eleH5.appendChild(document.createTextNode(edu.Anio));
+
+        const elementArticle = document.createElement('article');
+        elementArticle.classList.add('url');
+
+        const elementA = document.createElement('a');
+        elementA.href = edu.URL ? edu.URL : "#";
+        elementA.target = "_blank";
+
+        const elementP = document.createElement('p');
+        elementP.appendChild(document.createTextNode(edu.Lugar));
+
+        const elementSpan = document.createElement('span');
+        elementSpan.classList.add('icon-r-arrow_right');
+
+        elementA.appendChild(elementP);
+        elementA.appendChild(elementSpan);
+
+        elementArticle.appendChild(elementA);
+
+        divi_child.appendChild(eleH2);
+        divi_child.appendChild(eleH5);
+        divi_child.appendChild(elementArticle);
+
+        divi.appendChild(divi_child);
+        console.log(divi);
     }
 }
 

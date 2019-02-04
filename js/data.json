@@ -12,34 +12,28 @@
         "URL": ""
       },
       {
-        "Tema":"Bachillerato en Computacion",
-        "Anio":"2013 - 2014",
-        "Lugar":"Colegio Cristiano Torricelli",
-        "URL":""
-      },
-      {
         "Tema":"M001: MongoDB Basics",
         "Anio":"2018",
         "Lugar":"MongoDB University",
-        "URL":""
+        "URL":"https://goo.gl/Ra1uEq"
       },
       {
         "Tema":"Java Tutorial",
         "Anio":"2018",
         "Lugar":"SoloLearn",
-        "URL":""
+        "URL":"https://goo.gl/k38MQD"
       },
       {   
         "Tema":"JavaScript Tutorial",
         "Anio":"2018",
         "Lugar":"SoloLearn",
-        "URL":""
+        "URL":"https://goo.gl/y9UKxe"
       },
       {
         "Tema":"SQL Fundamentals",
         "Anio":"2018",
         "Lugar":"SoloLearn",
-        "URL":""
+        "URL":"https://goo.gl/y9UKxe"
       }
     ],
     "Habilidades":[
