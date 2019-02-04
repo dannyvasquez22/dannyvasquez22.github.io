@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Resume</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/tooltip.css">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="images/fork-symbol32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/fork-symbol16.png">
+	<link rel="shortcut icon" href="images/fork-symbol16.ico">
+
+	<meta property="og:image" content="images/fork-symbol16.jpg">
+	<meta property="og:image:width" content="269">
+	<meta property="og:image:height" content="269">
+	<meta property="og:description" content="Una pequeña biografía mía, saludos">
+	<meta property="og:title" content="Mi hoja de vida">
+	<meta property="og:url" content="https://dannyvasquez22.github.io/my-resume/">
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body id="body" class="dark-mode">
+	<nav id="n-dos">
+		<ul>
+			<li class="m_close"><a href="#r_uno">Acerca de mi</a></li>
+			<li class="m_close"><a href="#r_dos">Educacion</a></li>
+			<li class="m_close"><a href="#r_tres">Habilidades</a></li>
+			<li class="m_close"><a href="#r_four">Portafolio</a></li>
+		</ul>
+	</nav>
+	<header id="nav">
+		<a class="tooltip botton" href="https://bit.ly/2SoaAnB" target="_blank" title="Version en PDF!"><span class="icon-r-p_pdf"></span></a>
+		<button class="tooltip botton" title="Cambia los colores" onclick="toggleDarkLight()"><span class="icon-r-text"></span></button>
+		<button id="menu">
+			<b>Menu</b>
+			<figure id="hamb">
+				<figure class="barra"></figure>
+				<figure class="barra"></figure>
+			</figure>
+		</button>
+	</header>
+
+	<section id="myModal" class="modal">
+		<span class="close  icon-r-clear"></span>
+		<div class="modal-content">
+			<form action="https://formcarry.com/s/yRlDRPBxWfZ" method="POST" accept-charset="UTF-8">
+				<label for="firstName">Nombre</label>
+				<input type="text" name="firstName" placeholder="John Doe" autofocus />
+				<label for="email">Correo</label>
+				<input type="email" name="email" placeholder="john@mail.com" required />
+				<label for="mensaje">Mensaje</label>
+				<textarea name="mensaje" placeholder="Hey there! :D" required></textarea>
+				<div id="secure" class="g-recaptcha" data-sitekey="6LdKXXYUAAAAAJD7YGreUmiGoWdMKJFHa9yO7hT_"></div>
+				<div class="mBox">
+					<button class="btn_event change" type="submit">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section id="init">
+		<section id="barra">
+			<div class="principal">
+				<div class="center-box">
+					<img src="images/my.jpg" alt="profile">
+					<h1>Danny V.</h1>
+					<h3>Developer</h3>
+					<button id="mail" class="btn_event change">Dialogemos! :D</button>
+				</div>
+			</div>
+			<div class="contact">
+				<a href="mailto:dani22_vr@hotmail.com"><span class="icon-r-mail"></span></a>
+				<a href="https://www.linkedin.com/in/danny-vásquez-rafael" target="_blank"><span class="icon-linkedin"></span></a>
+				<a href="https://github.com/dannyvasquez22/" target="_blank"><span class="icon-i-github"></span></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#r_uno">Acerca de mi</a></li>
+					<li><a href="#r_dos">Educación</a></li>
+					<li><a href="#r_tres">Habilidades</a></li>
+					<li><a href="#r_four">Portafolio</a></li>
+				</ul>
+			</nav>
+
+		</section>
+		<script src="js/mail.js"></script>
+		<div id="content">
+			<main>
+				<section class="elem" id="r_uno">
+					<h1>Hola soy Danny!</h1>
+					<p>Innovador tanto en lo personal como en lo profesional, me gusta todo lo referente a la tecnología ya sea
+						software o hardware. Proactivo, autodidacta, sin temor al cambio y con una gran pasión por la programación. Soy
+						del tipo de persona que se fija en los detalles y aún después de terminado el proyecto, trata de buscar como
+						mejorarlo.
+					</p>
+					<p>Me encanta aprender nuevas cosas, ser comunicativo. Puedo trabajar con un equipo o de manera individual y
+						siempre entregar el mismo resultado.</p>
+
+					<h2>Idiomas</h2>
+					<ul>
+						<li>Español</li>
+						<li>Ingles</li>
+					</ul>
+					<h2 id="intereses_personales">Intereses personales</h2>
+				</section>
+				<section class="elem" id="r_dos">
+					<h1>Educación</h1>
+					<section class="lina-edu" id="educationBox">
+						<div class="line">
+							<div class="item">
+								<h2>Bachiller en Informática</h2>
+								<h5>Febrero 2017</h5>
+								<article class="url">
+									<p>Universidad Nacional de Trujillo</p>
+								</article>
+							</div>
+						</div>
+						<div class="line">
+							<div class="item">
+								<h2>M001: MongoDB Basics</h2>
+								<h5>2018</h5>
+								<article class="url">
+									<a href="https://goo.gl/Ra1uEq" target="_blank">
+										<p>MongoDB University</p>
+										<span class="icon-r-arrow_right"></span>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="line">
+							<div class="item">
+								<h2>Java Tutorial </h2>
+								<h5>2018</h5>
+								<article class="url">
+									<a href="https://goo.gl/k38MQD" target="_blank">
+										<p>SoloLearn</p>
+										<span class="icon-r-arrow_right"></span>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="line">
+							<div class="item">
+								<h2>JavaScript Tutorial</h2>
+								<h5>2018</h5>
+								<article class="url">
+									<a href="https://goo.gl/y9UKxe" target="_blank">
+										<p>SoloLearn</p>
+										<span class="icon-r-arrow_right"></span>
+									</a>
+								</article>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section class="elem" id="r_tres">
+					<h1>Habilidades</h1>
+					<section class="hg_uno">
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/java.svg" alt="Java">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>Java</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/sql.svg" alt="SQL Language">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>SQL</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/cpp.svg" alt="C++">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>C++</h3>
+								 </article>
+								 <p>Basico - Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/csh.svg" alt="C#">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>C#</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/css.svg" alt="CSS">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>CSS</h3>
+								 </article>
+								 <p>Intermedio Avanzado</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/html5.svg" alt="HTML 5">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>HTML 5</h3>
+								 </article>
+								 <p>Intermedio Avanzado</p>
+							  </div>
+						   </article>
+					    </div>                        
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/js.svg" alt="Java Script">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>Java Script</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/mongodb.svg" alt="MongoDb">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>MongoDB [No SQL]</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/nodejs.svg" alt="NodeJs">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>NodeJs</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+	
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/oracle.svg" alt="Oracle Data Base">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>Oracle [PL/SQL]</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/postgre.svg" alt="PostgreSQL Data Base">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>PostgreSQL [PLPGSQL]</h3>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/python.svg" alt="Python">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>Python</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item">
+						   <div class="img">
+							  <img src="images/svg/vuejs.svg" alt="Vue.Js Framework">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <article class="title">
+									<h3>Vue.Js Framework</h3>
+									<span class="icon-r-favorite"></span>
+								 </article>
+								 <p>Basico Intermedio</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item disable">
+						   <div class="img">
+							  <img src="images/svg/angular.svg" alt="Angular Framework">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Angular Framework</h3>
+								 <p>Proximamente</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item disable">
+						   <div class="img">
+							  <img src="images/svg/c.svg" alt="C">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>C</h3>
+								 <p>Proximamente</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item disable">
+						   <div class="img">
+							  <img src="images/svg/django.svg" alt="Django">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Django</h3>
+								 <p>Proximamente</p>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="box item disable">
+						   <div class="img">
+							  <img src="images/svg/rust.svg" alt="Rust">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Rust</h3>
+								 <p>Proximamente</p>
+							  </div>
+						   </article>
+					    </div>
+					</section>
+					<h1>Herramientas</h1>
+					<section class="hg_uno">
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/docker.svg" alt="Docker">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Docker</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/gimp.svg" alt="GIMP">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Gimp</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/git.svg" alt="git">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Git</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/pentaho.svg" alt="Pentaho">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Pentaho Data Integration</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/mysql.svg" alt="MySQL">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>MySQL</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/oracle.svg" alt="RMAN">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>RMAN</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/oracle.svg" alt="SqlLoader">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>SQL*Loader</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/vim.svg" alt="vim">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Vim</h3>
+							  </div>
+						   </article>
+					    </div>
+					</section>
+					<h1>Sistemas Operativos</h1>
+					<section class="hg_uno" id="dataGrid">
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/centos.svg" alt="CentOs">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>CentOs</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/debian.svg" alt="Debian">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Debian</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/deepin.svg" alt="Deepin">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Deepin</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/fedora.svg" alt="Fedora">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Fedora</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/opensuse.svg" alt="Open Suse">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Open Suse</h3>
+							  </div>
+						   </article>
+					    </div>
+					    <div class="item">
+						   <div class="img">
+							  <img src="images/svg/ubuntu.svg" alt="Ubuntu">
+						   </div>
+						   <article class="info">
+							  <div class="datos">
+								 <h3>Ubuntu</h3>
+							  </div>
+						   </article>
+					    </div>
+					</section>
+				</section>
+				<section class="elem" id="r_four">
+					<h1>Portafolio</h1>
+				</section>
+			</main>
+		</div>
+	</section>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">&#8682;</button>
+
+	<script src="js/scroll.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
