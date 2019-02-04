@@ -53,6 +53,7 @@ function contruyeElementos(data){
         elementPAbout.appendAfter(document.getElementById('about_me'));
     }
 
+    let objetoEdu = document.getElementById('educationBox');    
     for (const edu of data[0].Educacion) {
         const divi = document.createElement('div');
         divi.classList.add('line');
@@ -89,7 +90,7 @@ function contruyeElementos(data){
         divi_child.appendChild(elementArticle);
 
         divi.appendChild(divi_child);
-        console.log(divi);
+        objetoEdu.appendChild(divi);
     }
 }
 
