@@ -1,15 +1,15 @@
 [
   {
     "titlesHead": ["Acerca de mi", "Intereses personales", "Educacion", "Habilidades", "Herramientas", "Portafolio"],
-    "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas dolore reiciendis placeat ex possimus quaerat facere esse similique. Facere corporis nemo corrupti sit neque fugit eveniet delectus provident ratione. Repudiandae voluptas dolore reiciendis placeat ex possimus quaerat facere esse similique. Facere corporis nemo corrupti sit neque fugit eveniet delectus provident ratione.",
+    "aboutMe": ["Innovador tanto en lo personal como en lo profesional, me gusta todo lo referente a la tecnología ya sea software o hardware. Proactivo, autodidacta, sin temor al cambio y con una gran pasión por la programación. Soy del tipo de persona que se fija en los detalles y aún después de terminado el proyecto, trata de buscar como mejorarlo.", "Me encanta aprender nuevas cosas, ser comunicativo. Puedo trabajar con un equipo o de manera individual y siempre entregar el mismo resultado."],
     "interesesPersonales": ["UI", "UX", "Software Libre", "Data Science", "Machine learning", "Desarrollo Web"],
     "languages": ["Español", "Ingles"],
     "Educacion": [
       {
-        "Tema":"Ingenieria en Sistemas", 
-        "Anio":"2015 - [Cursado actualmente]",
-        "Lugar":"Universidad Mariano Galvez de Guatemala",
-        "URL":""
+        "Tema": "Bachiller en Informática", 
+        "Anio": "Febrero 2017",
+        "Lugar": "Universidad Nacional de Trujillo",
+        "URL": ""
       },
       {
         "Tema":"Bachillerato en Computacion",

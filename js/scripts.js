@@ -25,7 +25,7 @@ function requestJSON(archivo){
     });
 }
 
-let eleH1, eleH2, eleP, eleUl, eleText, eleH5, eleH3;
+let eleH1, eleH2, eleP, eleUl, eleText, eleH5, eleH3, eleLang;
 let objeto = document.getElementsByClassName('item');
 
 function contruyeElementos(data){
@@ -38,6 +38,15 @@ function contruyeElementos(data){
         eleUl.appendChild(eleLi);
         // firstBox.appendChild(eleUl);
         eleUl.appendAfter(document.getElementById('intereses_personales'));
+    }
+
+    elementUlLanguage = document.createElement('ul');
+    for (const lang of data[0].languages) {
+        const eleLi = document.createElement('li');
+        eleLang = document.createTextNode(lang);
+        eleLi.appendChild(eleLang);
+        elementUlLanguage.appendChild(eleLi);
+        elementUlLanguage.appendAfter(document.getElementById('languages'));
     }
 }
 
