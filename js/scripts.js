@@ -93,73 +93,62 @@ function contruyeElementos(data){
         objetoEdu.appendChild(divi);
     }
 
-    for (const server of data[0].skillServer) {
-        const elemSection = document.createElement('section');
-        elemSection.classList.add('hg_uno');
-
-        const divBox = document.createElement('div');
-        divBox.classList.add('box');
-        divBox.classList.add('item');
+    const elemSection = document.createElement('section');
+    elemSection.classList.add('hg_uno');
+    // for (const server of data[0].skillServer) {
+    //     const divBox = document.createElement('div');
+    //     divBox.classList.add('box');
+    //     divBox.classList.add('item');
         
-        if (server.next === true) {
-            divBox.classList.add('disable');
-        }
+    //     if (server.next === true) {
+    //         divBox.classList.add('disable');
+    //     }
 
-        const divImg = document.createElement('div');
-        divImg.classList.add('img');
+    //     const divImg = document.createElement('div');
+    //     divImg.classList.add('img');
 
-        const elemImg = document.createElement('img');
-        elemImg.src = server.img;
-        elemImg.alt = server.language;
+    //     const elemImg = document.createElement('img');
+    //     elemImg.src = server.img;
+    //     elemImg.alt = server.lenguaje;
 
-        divImg.appendChild(elemImg);
+    //     divImg.appendChild(elemImg);
 
-        const elemArticle = document.createElement('article');
-        elemArticle.classList.add('info');
+    //     const elemArticle = document.createElement('article');
+    //     elemArticle.classList.add('info');
 
-        const divData = document.createElement('div');
-        divData.classList.add('datos');
+    //     const divData = document.createElement('div');
+    //     divData.classList.add('datos');
 
-        const elemArticleTitle = document.createElement('article');
-        elemArticleTitle.classList.add('title');
+    //     const elemArticleTitle = document.createElement('article');
+    //     elemArticleTitle.classList.add('title');
 
-        const eleH3 = document.createElement('h3');
-        eleH3.appendChild(document.createTextNode(server.lenguaje));
+    //     const eleH3 = document.createElement('h3');
+    //     eleH3.appendChild(document.createTextNode(server.lenguaje));
 
-        elemArticleTitle.appendChild(eleH3);
+    //     elemArticleTitle.appendChild(eleH3);
 
-        const eleSpan = document.createElement('span');
-        eleSpan.classList.add('icon-r-favorite');
+    //     const eleSpan = document.createElement('span');
+    //     eleSpan.classList.add('icon-r-favorite');
 
-        if (server.favorite === true) {
-            elemArticleTitle.appendChild(eleSpan);
-        }
+    //     if (server.favorite === true) {
+    //         elemArticleTitle.appendChild(eleSpan);
+    //     }
 
-        divData.appendChild(elemArticleTitle);
+    //     const elementP = document.createElement('p');
+    //     elementP.appendChild(document.createTextNode(server.level));
 
-        elemArticle.appendChild(divData);
+    //     divData.appendChild(elemArticleTitle);
+    //     divData.appendChild(elementP);
 
-        divBox.appendChild(divImg);
-        divBox.appendChild(elemArticle);
+    //     elemArticle.appendChild(divData);
 
-        elemSection.appendChild(divBox);
+    //     divBox.appendChild(divImg);
+    //     divBox.appendChild(elemArticle);
 
-        // <section class="hg_uno">
-		// 			    <div class="box item">
-		// 				   <div class="img">
-		// 					  <img src="images/svg/java.svg" alt="Java">
-		// 				   </div>
-		// 				   <article class="info">
-		// 					  <div class="datos">
-		// 						 <article class="title">
-		// 							<h3>Java</h3>
-		// 							<span class="icon-r-favorite"></span>
-		// 						 </article>
-		// 						 <p>Intermedio</p>
-		// 					  </div>
-		// 				   </article>
-		// 			    </div>
-    }
+    //     elemSection.appendChild(divBox);
+    //     elemSection.appendAfter(document.getElementById('byServer'));
+    //     // console.log(elemSection);
+    // }
 }
 
 const nav = document.getElementById('n-dos');
