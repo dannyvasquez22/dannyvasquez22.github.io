@@ -1,6 +1,5 @@
-const URL = 'https://raw.githubusercontent.com/dannyvasquez22/dannyvasquez22.github.io/master/js/';
-const menu = document.getElementById('menu');
-const miInit = {
+const URL2 = 'https://raw.githubusercontent.com/dannyvasquez22/dannyvasquez22.github.io/master/js/';
+const miInit2 = {
     method: 'GET',
     cache: 'default'
 };
@@ -8,7 +7,7 @@ const miInit = {
 requestJSON('data.json');
 
 function requestJSON(archivo){
-    fetch(`${URL}${archivo}`,miInit)
+    fetch(`${URL2}${archivo}`,miInit2)
     .then((resp) => {
         if(resp.status != 200){
 
