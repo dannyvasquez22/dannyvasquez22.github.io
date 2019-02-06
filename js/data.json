@@ -36,62 +36,106 @@
         "URL":"https://goo.gl/y9UKxe"
       }
     ],
-    "Habilidades":[
+    "skillServer": [
       {
-        "Lenguaje":"C++",
-        "Nivel":"Basico - Intermedio",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
+        "lenguaje": "Java",
+        "level": "Intermedio",
+        "img": "images/svg/java.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
+        "lenguaje": "C++",
+        "level": "Básico",
+        "img": "images/svg/cpp.svg",
+        "favorite": false,
+        "next": false
+      }, 
+      {
+
+      }
+    ],
+    "skillCliente": [
+      {
+        "lenguaje": "HTML",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/html5.svg",
+        "favorite": false,
+        "next": false
       },  
       {
-        "Lenguaje":"CSS",
-        "Nivel":"Intermedio - Avanzado",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
+        "lenguaje": "CSS",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/css.svg",
+        "favorite": false,
+        "next": false
       },
       {
-        "Lenguaje":"HTML",
-        "Nivel":"Intermedio - Avanzado",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
+        "lenguaje": "Java Script",
+        "level": "Intermedio",
+        "img": "images/svg/js.svg",
+        "favorite": false,
+        "next": false
+      }
+    ],
+    "skillDB": [
+      {
+        "lenguaje": "MySQL - MariaDB",
+        "level": "Intermedio",
+        "img": "images/svg/mysql.svg",
+        "favorite": true
+      },
+      {
+        "lenguaje": "Oracle [PL/SQL]",
+        "level": "Intermedio",
+        "img": "images/svg/oracle.svg",
+        "favorite": false
+      },
+      {
+        "lenguaje": "PostgreSQL [PLPGSQL]",
+        "level": "Intermedio",
+        "img": "images/svg/postgre.svg",
+        "favorite": false
+      },
+      {
+        "lenguaje": "MongoDB [NoSQL]",
+        "level": "Básico",
+        "img": "images/svg/mongodb.svg",
+        "favorite": false
+      }
+    ],
+    "skillTools": [
+      {
+        "lenguaje": "Git",
+        "level": "Básico",
+        "img": "images/svg/git.svg",
+        "favorite": false
+      },
+      {
+        "lenguaje": "Docker",
+        "level": "Básico",
+        "img": "images/svg/docker.svg",
+        "favorite": false
+      },
+      {
+        "lenguaje": "Pentaho Data Integration",
+        "level": "Básico",
+        "img": "images/svg/pentaho.svg",
+        "favorite": false
+      }
+    ],
+    "skillSO": [
+      {
+        "lenguaje": "Ubuntu",
+        "level": "Básico",
+        "img": "images/svg/ubuntu.svg",
+        "favorite": false
       },  
       {
-        "Lenguaje":"Java",
-        "Nivel":"Intermedio",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
-      },
-      {
-        "Lenguaje":"Java Script",
-        "Nivel":"Intermedio - Avanzado",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
-      },
-      {
-        "Lenguaje":"MongoDB [NoSQL]",
-        "Nivel":"Basico - Intermedio",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
-      },
-      {
-        "Lenguaje":"Oracle [PL/SQL]",
-        "Nivel":"Intermedio",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
-      },
-      {
-        "Lenguaje":"PostgreSQL [PLPGSQL]",
-        "Nivel":"Intermedio",
-        "Img": "",
-        "ajuste": true,
-        "estado": true
+        "lenguaje": "Fedora",
+        "level": "Básico",
+        "img": "images/svg/fedora.svg",
+        "favorite": false
       }
     ]
   }
