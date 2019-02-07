@@ -45,6 +45,20 @@
         "next": false
       },
       {
+        "lenguaje": "Python",
+        "level": "Básico",
+        "img": "images/svg/python.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "C#",
+        "level": "Básico",
+        "img": "images/svg/csh.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
         "lenguaje": "C++",
         "level": "Básico",
         "img": "images/svg/cpp.svg",
@@ -73,6 +87,20 @@
         "img": "images/svg/js.svg",
         "favorite": false,
         "next": false
+      },
+      {
+        "lenguaje": "Angular +2",
+        "level": "Intermedio",
+        "img": "images/svg/angular.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
+        "lenguaje": "Vue.JS",
+        "level": "Básico",
+        "img": "images/svg/vuejs.svg",
+        "favorite": false,
+        "next": true
       }
     ],
     "skillDB": [
@@ -80,25 +108,29 @@
         "lenguaje": "MySQL - MariaDB",
         "level": "Intermedio",
         "img": "images/svg/mysql.svg",
-        "favorite": true
+        "favorite": true,
+        "next": false
       },
       {
         "lenguaje": "Oracle [PL/SQL]",
         "level": "Intermedio",
         "img": "images/svg/oracle.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       },
       {
         "lenguaje": "PostgreSQL [PLPGSQL]",
         "level": "Intermedio",
         "img": "images/svg/postgre.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       },
       {
         "lenguaje": "MongoDB [NoSQL]",
         "level": "Básico",
         "img": "images/svg/mongodb.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       }
     ],
     "skillTools": [
@@ -106,19 +138,22 @@
         "lenguaje": "Git",
         "level": "Básico",
         "img": "images/svg/git.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       },
       {
         "lenguaje": "Docker",
         "level": "Básico",
         "img": "images/svg/docker.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       },
       {
         "lenguaje": "Pentaho Data Integration",
         "level": "Básico",
         "img": "images/svg/pentaho.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       }
     ],
     "skillSO": [
@@ -126,13 +161,15 @@
         "lenguaje": "Ubuntu",
         "level": "Básico",
         "img": "images/svg/ubuntu.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       },  
       {
         "lenguaje": "Fedora",
         "level": "Básico",
         "img": "images/svg/fedora.svg",
-        "favorite": false
+        "favorite": false,
+        "next": false
       }
     ]
   }

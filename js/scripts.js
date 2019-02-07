@@ -17,11 +17,10 @@ function requestJSON(archivo){
         }
     })
     .then((data) => {
-        //console.log(data);
         contruyeElementos(data);
     })
     .catch((error) => {
-        console.log('error');
+        console.log('error' + error);
     });
 }
 
@@ -93,62 +92,76 @@ function contruyeElementos(data){
         objetoEdu.appendChild(divi);
     }
 
+    loadTech(data[0].skillServer, 'byServer');
+    loadTech(data[0].skillCliente, 'byClient');
+    loadTech(data[0].skillDB, 'byDB');
+}
+
+function loadTech(data, id) {
     const elemSection = document.createElement('section');
     elemSection.classList.add('hg_uno');
-    // for (const server of data[0].skillServer) {
-    //     const divBox = document.createElement('div');
-    //     divBox.classList.add('box');
-    //     divBox.classList.add('item');
+    for (const object of data) {
+        const divBox = document.createElement('div');
+        divBox.classList.add('box');
+        divBox.classList.add('item');
         
-    //     if (server.next === true) {
-    //         divBox.classList.add('disable');
-    //     }
+        if (object.next === true) {
+            divBox.classList.add('disable');
+        }
 
-    //     const divImg = document.createElement('div');
-    //     divImg.classList.add('img');
+        const divImg = document.createElement('div');
+        divImg.classList.add('img');
 
-    //     const elemImg = document.createElement('img');
-    //     elemImg.src = server.img;
-    //     elemImg.alt = server.lenguaje;
+        const elemImg = document.createElement('img');
+        elemImg.src = object.img;
+        elemImg.alt = object.lenguaje;
 
-    //     divImg.appendChild(elemImg);
+        divImg.appendChild(elemImg);
 
-    //     const elemArticle = document.createElement('article');
-    //     elemArticle.classList.add('info');
+        const elemArticle = document.createElement('article');
+        elemArticle.classList.add('info');
 
-    //     const divData = document.createElement('div');
-    //     divData.classList.add('datos');
+        const divData = document.createElement('div');
+        divData.classList.add('datos');
 
-    //     const elemArticleTitle = document.createElement('article');
-    //     elemArticleTitle.classList.add('title');
+        const elemArticleTitle = document.createElement('article');
+        elemArticleTitle.classList.add('title');
 
-    //     const eleH3 = document.createElement('h3');
-    //     eleH3.appendChild(document.createTextNode(server.lenguaje));
+        const eleH3 = document.createElement('h3');
+        eleH3.appendChild(document.createTextNode(object.lenguaje));
 
-    //     elemArticleTitle.appendChild(eleH3);
+        elemArticleTitle.appendChild(eleH3);
 
-    //     const eleSpan = document.createElement('span');
-    //     eleSpan.classList.add('icon-r-favorite');
+        const eleSpan = document.createElement('span');
+        eleSpan.classList.add('icon-r-favorite');
 
-    //     if (server.favorite === true) {
-    //         elemArticleTitle.appendChild(eleSpan);
-    //     }
+        divBox.addEventListener('mouseover', () => {
+            eleSpan.style.opacity = 1;
+            eleSpan.style.marginLeft = '0.5em';
+        });
+        divBox.addEventListener('mouseout', () => {
+            eleSpan.style.opacity = 0;
+            eleSpan.style.marginLeft = '-0.5em';
+        });
 
-    //     const elementP = document.createElement('p');
-    //     elementP.appendChild(document.createTextNode(server.level));
+        if (object.favorite === true) {
+           elemArticleTitle.appendChild(eleSpan);
+        }
 
-    //     divData.appendChild(elemArticleTitle);
-    //     divData.appendChild(elementP);
+        const elementP = document.createElement('p');
+        elementP.appendChild(document.createTextNode(object.level));
 
-    //     elemArticle.appendChild(divData);
+        divData.appendChild(elemArticleTitle);
+        divData.appendChild(elementP);
 
-    //     divBox.appendChild(divImg);
-    //     divBox.appendChild(elemArticle);
+        elemArticle.appendChild(divData);
 
-    //     elemSection.appendChild(divBox);
-    //     elemSection.appendAfter(document.getElementById('byServer'));
-    //     // console.log(elemSection);
-    // }
+        divBox.appendChild(divImg);
+        divBox.appendChild(elemArticle);
+
+        elemSection.appendChild(divBox);
+        elemSection.appendAfter(document.getElementById(id));
+    }
 }
 
 const nav = document.getElementById('n-dos');
@@ -210,7 +223,6 @@ function animate(){
                 c.childNodes[3].style.marginLeft = '-0.5em';
             }
         });
-
     }
 }
 
