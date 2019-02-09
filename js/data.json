@@ -9,31 +9,25 @@
         "Tema": "Bachiller en Informática", 
         "Anio": "Febrero 2017",
         "Lugar": "Universidad Nacional de Trujillo",
-        "URL": ""
-      },
-      {
-        "Tema":"M001: MongoDB Basics",
-        "Anio":"2018",
-        "Lugar":"MongoDB University",
-        "URL":"https://goo.gl/Ra1uEq"
+        "URL": "https://bit.ly/2GyO9Ws"
       },
       {
         "Tema":"Java Tutorial",
         "Anio":"2018",
         "Lugar":"SoloLearn",
-        "URL":"https://goo.gl/k38MQD"
+        "URL":"https://bit.ly/2RTSvK8"
       },
       {   
         "Tema":"JavaScript Tutorial",
         "Anio":"2018",
         "Lugar":"SoloLearn",
-        "URL":"https://goo.gl/y9UKxe"
+        "URL":"https://bit.ly/2MV8AOB"
       },
       {
         "Tema":"SQL Fundamentals",
         "Anio":"2018",
         "Lugar":"SoloLearn",
-        "URL":"https://goo.gl/y9UKxe"
+        "URL":"https://bit.ly/2DmZRjS"
       }
     ],
     "skillServer": [
