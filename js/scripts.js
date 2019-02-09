@@ -95,6 +95,8 @@ function contruyeElementos(data){
     loadTech(data[0].skillServer, 'byServer');
     loadTech(data[0].skillCliente, 'byClient');
     loadTech(data[0].skillDB, 'byDB');
+    loadTech(data[0].skillTools, 'byTools');
+    loadTech(data[0].skillSO, 'bySO');
 }
 
 function loadTech(data, id) {
@@ -200,33 +202,6 @@ function close(){
         elem.classList.remove('b-on');
     }  
 }
-
-const box = document.getElementsByClassName('box');
-
-function animate(){
-    for(let i = 0; i < box.length; i++){
-        let a = box[i].children[1];
-        let b;
-        box[i].addEventListener('mouseover',() => {
-            b = a.children[0];
-            let c = b.children[0];
-            if (c.children[1] != null){
-                c.childNodes[3].style.opacity = 1;
-                c.childNodes[3].style.marginLeft = '0.5em';
-            }
-        });
-        box[i].addEventListener('mouseout',() => {
-            b = a.children[0];
-            let c = b.children[0];
-            if (c.children[1] != null){
-                c.childNodes[3].style.opacity = 0;
-                c.childNodes[3].style.marginLeft = '-0.5em';
-            }
-        });
-    }
-}
-
-animate();
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };

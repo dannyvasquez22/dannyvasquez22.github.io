@@ -45,6 +45,13 @@
         "next": false
       },
       {
+        "lenguaje": "PHP",
+        "level": "Básico",
+        "img": "images/svg/php.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
         "lenguaje": "Python",
         "level": "Básico",
         "img": "images/svg/python.svg",
@@ -62,6 +69,13 @@
         "lenguaje": "NodeJs",
         "level": "Básico",
         "img": "images/svg/nodejs.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "ReactJs",
+        "level": "Básico",
+        "img": "images/svg/react.svg",
         "favorite": false,
         "next": false
       },
@@ -94,6 +108,13 @@
         "img": "images/svg/css.svg",
         "favorite": false,
         "next": false
+      },  
+      {
+        "lenguaje": "Sass",
+        "level": "Básico",
+        "img": "images/svg/sass.svg",
+        "favorite": false,
+        "next": false
       },
       {
         "lenguaje": "Java Script",
@@ -110,9 +131,23 @@
         "next": false
       },
       {
+        "lenguaje": "Ionic +2",
+        "level": "Intermedio",
+        "img": "images/svg/ionic.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
         "lenguaje": "Vue.JS",
         "level": "Básico",
         "img": "images/svg/vuejs.svg",
+        "favorite": false,
+        "next": true
+      },
+      {
+        "lenguaje": "Android",
+        "level": "Básico",
+        "img": "images/svg/android.svg",
         "favorite": false,
         "next": true
       }
@@ -159,6 +194,27 @@
         "lenguaje": "Git",
         "level": "Básico",
         "img": "images/svg/git.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Slack",
+        "level": "Básico",
+        "img": "images/svg/slack.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "JIRA",
+        "level": "Básico",
+        "img": "images/svg/jira.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Bitbucket",
+        "level": "Básico",
+        "img": "images/svg/bitbucket.svg",
         "favorite": false,
         "next": false
       },
