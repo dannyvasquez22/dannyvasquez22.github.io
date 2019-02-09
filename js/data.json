@@ -52,6 +52,20 @@
         "next": false
       },
       {
+        "lenguaje": "Django",
+        "level": "Básico",
+        "img": "images/svg/django.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "NodeJs",
+        "level": "Básico",
+        "img": "images/svg/nodejs.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
         "lenguaje": "C#",
         "level": "Básico",
         "img": "images/svg/csh.svg",
@@ -104,6 +118,13 @@
       }
     ],
     "skillDB": [
+      {
+        "lenguaje": "SQL Language",
+        "level": "Intermedio",
+        "img": "images/svg/sql.svg",
+        "favorite": true,
+        "next": false
+      },
       {
         "lenguaje": "MySQL - MariaDB",
         "level": "Intermedio",
