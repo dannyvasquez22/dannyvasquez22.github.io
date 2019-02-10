@@ -39,9 +39,51 @@
         "next": false
       },
       {
+        "lenguaje": "Hibernate",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/hibernate.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Maven",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/maven.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Spring Framework",
+        "level": "Intermedio",
+        "img": "images/svg/spring.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
+        "lenguaje": "Weblogic 12.2.1",
+        "level": "Intermedio",
+        "img": "images/svg/weblogic.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
         "lenguaje": "PHP",
-        "level": "Básico",
+        "level": "Básico - Intermedio",
         "img": "images/svg/php.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Laravel",
+        "level": "Básico",
+        "img": "images/svg/laravel.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Apache",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/apache.svg",
         "favorite": false,
         "next": false
       },
@@ -64,14 +106,14 @@
         "level": "Básico",
         "img": "images/svg/nodejs.svg",
         "favorite": false,
-        "next": false
+        "next": true
       },
       {
         "lenguaje": "ReactJs",
         "level": "Básico",
         "img": "images/svg/react.svg",
         "favorite": false,
-        "next": false
+        "next": true
       },
       {
         "lenguaje": "C#",
@@ -109,12 +151,33 @@
         "img": "images/svg/sass.svg",
         "favorite": false,
         "next": false
+      },  
+      {
+        "lenguaje": "Bootstrap 3-4",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/bootstrap.svg",
+        "favorite": false,
+        "next": false
+      },  
+      {
+        "lenguaje": "jQuery",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/jquery.svg",
+        "favorite": false,
+        "next": false
       },
       {
-        "lenguaje": "Java Script",
+        "lenguaje": "JavaScript",
         "level": "Intermedio",
         "img": "images/svg/js.svg",
         "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "TypeScript",
+        "level": "Intermedio",
+        "img": "images/svg/ts.svg",
+        "favorite": true,
         "next": false
       },
       {
@@ -132,6 +195,20 @@
         "next": false
       },
       {
+        "lenguaje": "Npm",
+        "level": "Básico",
+        "img": "images/svg/npm.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Webpack",
+        "level": "Básico",
+        "img": "images/svg/webpack.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
         "lenguaje": "Vue.JS",
         "level": "Básico",
         "img": "images/svg/vuejs.svg",
@@ -142,6 +219,13 @@
         "lenguaje": "Android",
         "level": "Básico",
         "img": "images/svg/android.svg",
+        "favorite": false,
+        "next": true
+      },
+      {
+        "lenguaje": "Flutter",
+        "level": "Básico",
+        "img": "images/svg/flutter.svg",
         "favorite": false,
         "next": true
       }
@@ -155,9 +239,16 @@
         "next": false
       },
       {
-        "lenguaje": "MySQL - MariaDB",
+        "lenguaje": "MySQL",
         "level": "Intermedio",
         "img": "images/svg/mysql.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
+        "lenguaje": "MariaDB",
+        "level": "Intermedio",
+        "img": "images/svg/mariadb.svg",
         "favorite": true,
         "next": false
       },
@@ -176,6 +267,20 @@
         "next": false
       },
       {
+        "lenguaje": "MSSQL",
+        "level": "Intermedio",
+        "img": "images/svg/sqlserver.svg",
+        "favorite": false,
+        "next": false
+      },
+      {
+        "lenguaje": "Firebase - Firestore",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/firebase.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
         "lenguaje": "MongoDB [NoSQL]",
         "level": "Básico",
         "img": "images/svg/mongodb.svg",
@@ -188,20 +293,34 @@
         "lenguaje": "Git",
         "level": "Básico",
         "img": "images/svg/git.svg",
-        "favorite": false,
+        "favorite": true,
         "next": false
       },
       {
         "lenguaje": "Slack",
         "level": "Básico",
         "img": "images/svg/slack.svg",
-        "favorite": false,
+        "favorite": true,
         "next": false
       },
       {
         "lenguaje": "JIRA",
         "level": "Básico",
         "img": "images/svg/jira.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
+        "lenguaje": "Postman",
+        "level": "Básico - Intermedio",
+        "img": "images/svg/postman.svg",
+        "favorite": true,
+        "next": false
+      },
+      {
+        "lenguaje": "AWS",
+        "level": "Básico",
+        "img": "images/svg/aws.svg",
         "favorite": false,
         "next": false
       },
@@ -217,7 +336,7 @@
         "level": "Básico",
         "img": "images/svg/docker.svg",
         "favorite": false,
-        "next": false
+        "next": true
       },
       {
         "lenguaje": "Pentaho Data Integration",
