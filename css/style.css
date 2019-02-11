@@ -264,6 +264,12 @@ header button #hamb .barra {
     background-color: rgb(254, 254, 254);
     /* background-color: white; */
     /* height: -webkit-fill-available; */
+    background-color: rgb(254, 254, 254);
+    /* background-attachment: scroll, fixed;
+    background-image: url("../images/bg.jpg");
+    background-position: top left, top left;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, auto 100%; */
 }
 #barra .principal {
     margin-top: 2em;
@@ -521,10 +527,13 @@ header button #hamb .barra {
     width: 50px;
     height: 50px;
 }
+#content main #r_cuatro {
+    height: 330px;
+}
 
 /* -----------Móviles en horizontal o tablets en vertical----------- */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {   
     .modal-content {
         padding: 2em 15%;
     }
@@ -661,6 +670,11 @@ header button #hamb .barra {
         z-index: 10;
         height: auto;
         background-color: rgb(254, 254, 254);
+        background-attachment: scroll, fixed;
+        background-image: url("../images/overlay.png"), url("../images/bg.jpg");
+        background-position: top left, top left;
+		background-repeat: repeat, no-repeat;
+		background-size: auto, auto 100%;
         position: fixed;
         width: 24%;
         margin-top: -3.2em;
@@ -823,3 +837,255 @@ body.light-mode .change, body.dark-mode .change:hover {
     background: black;
     color: white;
 } background-color: slategrey; //background-color: #1f2029;*/
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Portafolio */
+.wrapper {
+	margin: 0 auto 100px auto;
+    max-width: 960px;
+    font-family: var(--ft-first);
+    font-weight: 100;
+}
+
+.stage {
+	list-style: none;
+	padding: 0;
+}
+/*************************************
+Build the scene and rotate on hover
+**************************************/
+
+.scene {
+	width: 160px;
+	height: 300px;
+	margin: 15px 70px 0 70px;
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.movie {
+	width: 160px;
+	height: 300px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-130px);
+	-moz-transform: translateZ(-130px);
+	transform: translateZ(-130px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.movie:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+/*************************************
+Transform and style the two planes
+**************************************/
+
+.movie .poster, 
+.movie .info {
+	position: absolute;
+	width: 160px;
+	height: 250px;
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.movie .poster  {
+	-webkit-transform: translateZ(130px);
+	-moz-transform: translateZ(130px);
+	transform: translateZ(130px);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.movie .info {
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 4px solid #fff;
+	font-size: 0.75em;
+}
+
+/*************************************
+Shadow beneath the 3D object
+**************************************/
+
+.csstransforms3d .movie::after {
+	content: '';
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(130px);
+	-moz-transform: rotateX(90deg) translateY(130px);
+	transform: rotateX(90deg) translateY(130px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .movie:hover::after {
+	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+}
+
+/*************************************
+Movie information
+**************************************/
+
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.info header h1 {
+    font-family: var(--ft-first);
+    font-weight: 100;
+    margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+.info header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 3px;
+}
+
+.info p {
+	/* padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 700; */
+	color: #666;
+	/* line-height: 1.4em;	  */
+}
+
+/*************************************
+Generate "lighting" using box shadows
+**************************************/
+
+.movie .poster,
+.movie .info,
+.movie .info header {
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .movie .poster {
+	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.csstransforms3d .movie:hover .poster {
+	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+
+.csstransforms3d .movie .info, 
+.csstransforms3d .movie .info header {
+	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+
+.csstransforms3d .movie:hover .info, 
+.csstransforms3d .movie:hover .info header {
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+
+/*************************************
+Posters and still images
+**************************************/
+
+.scene:nth-child(1) .movie .poster {
+  background-image: url(../images/portafolio/1.jpg);
+}
+
+.scene:nth-child(2) .poster {
+  background-image: url(../images/portafolio/2.jpg);
+}
+
+.scene:nth-child(3) .poster {
+  background-image: url(../images/portafolio/4.jpg);
+}
+
+.scene:nth-child(1) .info header {
+	background-image: url(../images/portafolio/s1.jpg);
+}
+
+.scene:nth-child(2) .info header {
+	background-image: url(../images/portafolio/s2.jpg);
+}
+
+.scene:nth-child(3) .info header {
+	background-image: url(../images/portafolio/s3.jpg);
+}
+
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .movie .poster, 
+.no-csstransforms3d .movie .info {
+	position: relative;
+}
+
+/*************************************
+Media Queries //(min-zoom: 100)
+**************************************/
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        margin: 0 auto 100px auto;
+        max-width: 960px;
+    }
+    .scene {
+        width: 80px;
+        height: 150px;
+        margin: 15px 70px 0 70px;
+        float: left;
+        -webkit-perspective: 1000px;
+        -moz-perspective: 1000px;
+        perspective: 1000px;
+    }
+    .movie .info {
+        position: absolute;
+        width: 80px;
+        height: 150px;
+        background-color: #fff;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .info header {
+        color: #FFF;
+        padding: 7px 10px;
+        font-weight: bold;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-shadow: 0px 1px 1px rgba(0,0,0,1);
+    }
+    .info p {
+        margin: 80px 0 0 0;
+        width: 120px;
+    }   
+}

@@ -102,20 +102,6 @@
         "next": false
       },
       {
-        "lenguaje": "NodeJs",
-        "level": "Básico",
-        "img": "images/svg/nodejs.svg",
-        "favorite": false,
-        "next": true
-      },
-      {
-        "lenguaje": "ReactJs",
-        "level": "Básico",
-        "img": "images/svg/react.svg",
-        "favorite": false,
-        "next": true
-      },
-      {
         "lenguaje": "C#",
         "level": "Básico",
         "img": "images/svg/csh.svg",
@@ -128,6 +114,20 @@
         "img": "images/svg/cpp.svg",
         "favorite": false,
         "next": false
+      },
+      {
+        "lenguaje": "NodeJs",
+        "level": "Básico",
+        "img": "images/svg/nodejs.svg",
+        "favorite": false,
+        "next": true
+      },
+      {
+        "lenguaje": "ReactJs",
+        "level": "Básico",
+        "img": "images/svg/react.svg",
+        "favorite": false,
+        "next": true
       }
     ],
     "skillCliente": [
@@ -332,18 +332,18 @@
         "next": false
       },
       {
-        "lenguaje": "Docker",
-        "level": "Básico",
-        "img": "images/svg/docker.svg",
-        "favorite": false,
-        "next": true
-      },
-      {
         "lenguaje": "Pentaho Data Integration",
         "level": "Básico",
         "img": "images/svg/pentaho.svg",
         "favorite": false,
         "next": false
+      },
+      {
+        "lenguaje": "Docker",
+        "level": "Básico",
+        "img": "images/svg/docker.svg",
+        "favorite": false,
+        "next": true
       }
     ],
     "skillSO": [

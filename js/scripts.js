@@ -23,7 +23,8 @@ function requestJSON(archivo){
         console.log('error' + error);
     });
 }
-
+console.log(screen.width);
+console.log(window.width);
 let eleH1, eleH2, eleP, eleUl, eleText, eleH5, eleH3, eleLang;
 let objeto = document.getElementsByClassName('item');
 
@@ -31,6 +32,7 @@ function contruyeElementos(data){
     eleUl = document.createElement('ul');
     for(const cont of data[0].interesesPersonales){
         const eleLi = document.createElement('li');
+        eleLi.classList.add('animated', 'fadeInUp', 'delay-1s');
         eleText = document.createTextNode(cont);
         eleLi.appendChild(eleText);
         eleUl.appendChild(eleLi);
@@ -40,6 +42,7 @@ function contruyeElementos(data){
     elementUlLanguage = document.createElement('ul');
     for (const lang of data[0].languages) {
         const eleLi = document.createElement('li');
+        eleLi.classList.add('animated', 'fadeInUp', 'delay-1s');
         eleLang = document.createTextNode(lang);
         eleLi.appendChild(eleLang);
         elementUlLanguage.appendChild(eleLi);
@@ -48,6 +51,7 @@ function contruyeElementos(data){
 
     for (const lang of data[0].aboutMe) {
         const elementPAbout = document.createElement('p');
+        elementPAbout.classList.add('animated', 'fadeInUp', 'delay-1s');
         elementPAbout.appendChild(document.createTextNode(lang));
         elementPAbout.appendAfter(document.getElementById('about_me'));
     }
@@ -104,6 +108,7 @@ function loadTech(data, id) {
     elemSection.classList.add('hg_uno');
     for (const object of data) {
         const divBox = document.createElement('div');
+        divBox.classList.add('animated', 'zoomInUp', 'delay-1s');
         divBox.classList.add('box');
         divBox.classList.add('item');
         
